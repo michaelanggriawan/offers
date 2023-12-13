@@ -20,34 +20,36 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-```
-  git clone git@github.com:michaelanggriawan/offers.git
-```
+  ```
+    git clone git@github.com:michaelanggriawan/offers.git
+  ```
 
 2. Install dependencies:
 
-```
-cd nestjs-offers
-npm install
-```
+  ```
+  cd nestjs-offers
+  npm install
+  ```
 
 
 3. Run the app
 
-```
-npm run start:dev
-```
-Visit http://localhost:3000 in your browser.
+  ```
+  npm run start:dev
+  ```
+  Visit http://localhost:3000 in your browser.
 
 4. API Documentation
 
-Explore the API using Swagger documentation:
+  Explore the API using Swagger documentation:
 
-http://localhost:3000/api/docs
+  http://localhost:3000/api/docs
 
-Scripts
-npm run start - Start the application.
-npm run start:dev - Start the application in development mode.
-npm run test - Run tests.
-npm run lint - Lint the code.
-...
+
+### Scripts
+  ```
+  npm run start - Start the application.
+  npm run start:dev - Start the application in development mode.
+  npm run test - Run tests.
+  npm run lint - Lint the code.
+  ...
