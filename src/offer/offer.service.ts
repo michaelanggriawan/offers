@@ -16,8 +16,6 @@ export class OfferService {
     for (let i = 0; i < payloads.length; i++) {
       const payload = payloads[i];
       try {
-        // print the warning error, if the type object doesn't pass the validation type
-        // skip and continue to the next payload
         this.isValidResponsePayloadForPayload1(payload);
       } catch (error) {
         // print the warning error, if the type object doesn't pass the validation type
