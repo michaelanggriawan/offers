@@ -7,6 +7,7 @@ NestJS project for handling and transforming offers.
 ## Features
 
 - Create and manage Offer1 and Offer2 entities.
+- Validate offer payloads.
 - Transform and store offer payloads.
 
 ## Prerequisites
