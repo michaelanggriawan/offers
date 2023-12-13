@@ -52,4 +52,4 @@ Make sure you have the following installed:
   npm run start:dev - Start the application in development mode.
   npm run test - Run tests.
   npm run lint - Lint the code.
-  ...
+  ```
