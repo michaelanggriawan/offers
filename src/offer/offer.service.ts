@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { Offer1Dto } from '../dtos/offer1.dto';
 import { Offer2Dto } from '../dtos/offer2.dto';
-import { payload as payload1Payload } from '../payload/offer1.payload';
-import { payload as payload2Payload } from '../payload/offer2.payload';
+import { payload as payloadOffer1 } from '../payload/offer1.payload';
+import { payload as payloadOffer2 } from '../payload/offer2.payload';
 import { Offer } from '../entities/offer.entity';
 import { Offer1, Offer2 } from './offer.types';
 
@@ -11,7 +11,7 @@ import { Offer1, Offer2 } from './offer.types';
 export class OfferService {
   async transformOffer1Payload(): Promise<Array<Offer>> {
     const result = [];
-    const payloads = payload1Payload.response.offers;
+    const payloads = payloadOffer1.response.offers;
 
     for (let i = 0; i < payloads.length; i++) {
       const payload = payloads[i];
@@ -36,7 +36,7 @@ export class OfferService {
 
   async transformOffer2Payload() {
     const result = [];
-    const payloads = payload2Payload.data;
+    const payloads = payloadOffer2.data;
 
     for (const [key, value] of Object.entries(payloads)) {
       try {
