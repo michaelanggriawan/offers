@@ -21,7 +21,7 @@ export class OfferService {
         // print the warning error, if the type object doesn't pass the validation type
         // skip and continue to the next payload
         console.warn(`Error in payload at index ${i}: ${error.message}`);
-        break;
+        continue;
       }
 
       // serialize the payload to acceptable entity
@@ -43,7 +43,7 @@ export class OfferService {
         // print the warning error, if the type object doesn't pass the validation type
         // skip and continue to the next payload
         console.warn(`Error in payload at ${key}: ${error.message}`);
-        break;
+        continue;
       }
 
       // serialize the payload to acceptable entity
